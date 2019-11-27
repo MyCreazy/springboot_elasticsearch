@@ -1,0 +1,20 @@
+server:
+  port: 28082
+
+
+
+http:
+  maxTotal: 300
+  defaultMaxPerRoute: 50
+  connectTimeout: 1000
+  connectionRequestTimeout: 500
+  socketTimeout: 5000
+
+request:
+  livybaseurl: http://127.0.0.1:8998
+
+spring:
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 10.1.0.8:9300
